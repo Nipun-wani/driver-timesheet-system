@@ -60,7 +60,35 @@ This project is a web-based application developed using Java, Servlets, and JDBC
 
 \## 📷 Screenshots
 
-(Add screenshots here later)
+
+
+\### 🔐 Login Page
+
+!\[Login](Screenshots/login.png)
+
+
+
+\### 📊 Dashboard
+
+!\[Dashboard](Screenshots/dashboard.png)
+
+
+
+\### ➕ Add Driver
+
+!\[Add Driver](Screenshots/addDriver.png)
+
+
+
+\### 📝 Timesheet Entry
+
+!\[Timesheet](Screenshots/dailyTimesheet.png)
+
+
+
+\### 📈 Weekly Report
+
+!\[Report](Screenshots/weeklyPatmentReport.png)
 
 
 
