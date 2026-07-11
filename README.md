@@ -1,98 +1,187 @@
-\# Driver Timesheet and Payroll Calculation System
+# 🚚 Driver Timesheet and Payroll Calculation System
 
+A web-based application developed to simplify **driver management, daily timesheet tracking, and payroll processing**. The system enables administrators to manage driver records, record daily working hours, and automatically generate weekly payroll reports with overtime calculations, reducing manual effort and improving payroll accuracy.
 
+---
 
-\## 📌 Project Description
+## 📌 Project Overview
 
-This project is a web-based application developed using Java, Servlets, and JDBC to manage driver work hours and automate payroll calculations. It helps in reducing manual errors and improves efficiency in tracking driver activities.
+The Driver Timesheet and Payroll Calculation System is designed to automate payroll operations by maintaining driver information, recording daily work hours, and calculating weekly salaries based on working hours and overtime. The application provides a centralized platform for managing payroll efficiently while minimizing manual errors.
 
+---
 
+## ✨ Features
 
-\## 🚀 Features
+- 🔐 Secure Admin Login
+- 👨‍💼 Driver Registration & Management
+- 🕒 Daily Timesheet Entry
+- 📋 View Driver Records
+- 📊 Weekly Payroll Generation
+- ⏱️ Automatic Overtime Calculation
+- 📄 Payroll Report Generation
+- 💾 MySQL Database Integration using JDBC
 
-\- Driver registration and management
+---
 
-\- Daily timesheet entry
+## 🛠️ Tech Stack
 
-\- Weekly payroll calculation
+### Backend
+- Java
+- Servlets
+- JSP
+- JDBC
 
-\- Overtime calculation
+### Frontend
+- HTML
+- CSS
+- JavaScript
 
-\- Report generation
+### Database
+- MySQL
 
+### Server
+- Apache Tomcat
 
+### Development Tools
+- Eclipse IDE
+- MySQL Workbench
 
-\## 🛠️ Tech Stack
+---
 
-\- Java (Servlets, JSP)
+## 📂 Project Structure
 
-\- JDBC
+```text
+Driver-Timesheet-System
+│
+├── src
+│   ├── controller
+│   ├── dao
+│   ├── model
+│   ├── service
+│   └── utility
+│
+├── WebContent
+│   ├── css
+│   ├── js
+│   ├── images
+│   └── jsp
+│
+├── database.sql
+└── README.md
+```
 
-\- MySQL
+---
 
-\- HTML, CSS
+## ⚙️ Installation & Setup
 
+### Prerequisites
 
+- Java JDK 8 or later
+- Apache Tomcat
+- MySQL Server
+- Eclipse IDE
 
-\## 🗂️ Project Structure
+### Steps to Run
 
-\- src/ → Java source code (Controller, DAO, Model, Service)
+1. Clone the repository.
 
-\- WebContent/ → JSP pages and frontend
+```bash
+git clone https://github.com/Nipun-wani/driver-timesheet-system.git
+```
 
-\- database.sql → Database schema
+2. Import the project into Eclipse.
 
+3. Create the MySQL database using the provided `database.sql` script.
 
+4. Configure the database connection in the JDBC utility class.
 
-\## ⚙️ How to Run
+5. Deploy the project on Apache Tomcat.
 
-1\. Import project into Eclipse
+6. Start the server and access the application.
 
-2\. Configure Apache Tomcat server
+---
 
-3\. Setup MySQL database using database.sql
+## 📷 Application Screenshots
 
-4\. Update DB credentials in code
+### 🔐 Login Page
 
-5\. Run project on server
+![Login](screenshots/Login.png)
 
+---
 
+### 📊 Dashboard
 
-\## 📷 Screenshots
+![Dashboard](screenshots/Dashboard.png)
 
+---
 
+### 👨‍💼 Add Driver
 
-\### 🔐 Login Page
+![Add Driver](screenshots/Add%20Driver.png)
 
-!\[Login](Screenshots/login.png)
+---
 
+### 🕒 Daily Timesheet Entry
 
+![Timesheet](screenshots/Timesheet.png)
 
-\### 📊 Dashboard
+---
 
-!\[Dashboard](Screenshots/dashboard.png)
+### 📈 Weekly Payroll Report
 
+![Weekly Payroll Report](screenshots/WeeklyReport.png)
+![Weekly Payroll Report](screenshots/Report.png)
 
+---
 
-\### ➕ Add Driver
+## 📊 Payroll Calculation
 
-!\[Add Driver](Screenshots/addDriver.png)
+The system automatically generates weekly payroll based on recorded working hours.
 
+- Standard Working Hours: **40 Hours / Week**
+- Overtime Rate: **1.5 × Hourly Rate**
 
+### Formula
 
-\### 📝 Timesheet Entry
+```text
+Regular Pay = Regular Hours × Hourly Rate
 
-!\[Timesheet](Screenshots/dailyTimesheet.png)
+Overtime Pay = Overtime Hours × Hourly Rate × 1.5
 
+Total Salary = Regular Pay + Overtime Pay
+```
 
+---
 
-\### 📈 Weekly Report
+## 🎯 Key Learning Outcomes
 
-!\[Report](Screenshots/weeklyPatmentReport.png)
+- Developed a dynamic web application using Java Servlets and JSP.
+- Implemented CRUD operations using JDBC and MySQL.
+- Applied the MVC (Model-View-Controller) architecture.
+- Implemented session-based authentication.
+- Designed and managed a relational database.
+- Automated payroll calculation using business logic.
 
+---
 
+## 🚀 Future Enhancements
 
-\## 👨‍💻 Author
+- Spring Boot Migration
+- Spring Security Integration
+- REST API Development
+- JWT Authentication
+- Email Payslip Generation
+- Dashboard Analytics
+- Export Payroll Reports to PDF
 
-Nipun Wani
+---
 
+## 👨‍💻 Author
+
+**Nipun Wani**
+
+GitHub: https://github.com/Nipun-wani
+
+---
+
+⭐ If you found this project useful, consider giving it a Star!
