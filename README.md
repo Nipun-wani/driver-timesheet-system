@@ -182,6 +182,3 @@ Total Salary = Regular Pay + Overtime Pay
 
 GitHub: https://github.com/Nipun-wani
 
----
-
-⭐ If you found this project useful, consider giving it a Star!
